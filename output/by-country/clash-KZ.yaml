@@ -29,6 +29,13 @@ proxies:
   servername: yahoo.com
   client-fingerprint: chrome
 - name: 🇰🇿 KZ 03 - xiaohe
+  type: ss
+  server: 94.198.220.183
+  port: 64674
+  cipher: chacha20-ietf-poly1305
+  password: s8LbJCgUiGXeCKVc63tHJP
+  udp: true
+- name: 🇰🇿 KZ 04 - xiaohe
   type: vless
   server: 77.73.232.61
   port: 19747
@@ -40,13 +47,6 @@ proxies:
     public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 KZ 04 - xiaohe
-  type: ss
-  server: 94.198.220.183
-  port: 64674
-  cipher: chacha20-ietf-poly1305
-  password: s8LbJCgUiGXeCKVc63tHJP
-  udp: true
 - name: 🇰🇿 KZ 05 - xiaohe
   type: vless
   server: 77.73.232.61
