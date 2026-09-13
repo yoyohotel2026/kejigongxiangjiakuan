@@ -1,0 +1,96 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  type: vless
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  type: vless
+  server: 38.47.96.220
+  port: 11424
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: notls.lukongtou.eu.org
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  type: vless
+  server: 80.240.18.227
+  port: 10051
+  uuid: d161dcf1-fde2-44cc-b08d-d8944895e842
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  type: vless
+  server: 84.22.150.239
+  port: 444
+  uuid: dc83276f-268a-4b18-9f63-63c73e11ffd8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+rules:
+- MATCH,PROXIES
