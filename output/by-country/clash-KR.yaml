@@ -5,16 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaohe
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 141.164.45.187
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
   type: vless
   server: 172.64.88.251
   port: 8880
@@ -27,10 +31,10 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
       Host: patient-cake-39c7.44-e7a.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 03 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
   type: vless
-  server: 172.67.217.240
-  port: 443
+  server: 104.18.42.163
+  port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
@@ -41,9 +45,46 @@ proxies:
     path: /?ed=2560
     headers:
       Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
   type: vless
-  server: 172.64.52.230
+  server: www.glassdoor.com
+  port: 8880
+  uuid: 5fc8a5e4-d0c5-4ad2-8bfe-db589553c6c1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: red-disk-58df.153-2ce.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
+  type: vless
+  server: 104.16.150.108
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -55,14 +96,24 @@ proxies:
     path: /?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
   type: ss
   server: 141.164.45.187
-  port: 5001
+  port: 9090
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
+  type: vmess
+  server: 146.56.112.110
+  port: 8888
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -72,7 +123,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
   type: vless
   server: 172.67.209.127
   port: 8880
@@ -85,7 +136,17 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
       Host: dark-breeze-a59a.494.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 14 - xiaohe
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 15 - xiaohe
   type: vless
   server: 172.64.88.251
   port: 8880
@@ -98,24 +159,21 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
       Host: dry-credit-fc26.203-d8c.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 09 - xiaohe
-  type: ss
-  server: 141.164.45.187
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+- name: 🇰🇷 韩国 (South Korea) 16 - xiaohe
+  type: vless
+  server: 211.48.30.184
+  port: 30017
+  uuid: beec57a5-8266-4279-b279-f495bdc70699
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 10 - xiaohe
-  type: vmess
-  server: 146.56.112.110
-  port: 8888
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 11 - xiaohe
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 17 - xiaohe
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -127,7 +185,21 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 12 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 18 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 19 - xiaohe
+  type: ss
+  server: 141.164.45.187
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 20 - xiaohe
   type: vless
   server: 172.66.170.53
   port: 8880
@@ -140,16 +212,6 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
       Host: summer-hat-ba5c.430.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 13 - xiaohe
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -168,6 +230,13 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 11 - xiaohe
   - 🇰🇷 韩国 (South Korea) 12 - xiaohe
   - 🇰🇷 韩国 (South Korea) 13 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 14 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 15 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 16 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 17 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 18 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 19 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 20 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -186,5 +255,12 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 11 - xiaohe
   - 🇰🇷 韩国 (South Korea) 12 - xiaohe
   - 🇰🇷 韩国 (South Korea) 13 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 14 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 15 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 16 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 17 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 18 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 19 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 20 - xiaohe
 rules:
 - MATCH,PROXIES

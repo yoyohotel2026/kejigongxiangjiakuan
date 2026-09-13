@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇲 IM 01 - xiaohe
+- name: 🇲🇩 MD 01 - xiaohe
   type: vless
-  server: 185.162.229.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 104.17.169.13
+  port: 2053
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: inDeX.HaRMONiCA01.WORkers.DeV
   network: ws
   ws-opts:
-    path: /
+    path: /axch1mttbxz2k55y01
     headers:
-      Host: vms.lifetime61.workers.dev
+      Host: inDeX.HaRMONiCA01.WORkers.DeV
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇲 IM 01 - xiaohe
+  - 🇲🇩 MD 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇲 IM 01 - xiaohe
+  - 🇲🇩 MD 01 - xiaohe
 rules:
 - MATCH,PROXIES
