@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 (家宽) - xiaohe
   type: vless
-  server: 162.159.152.4
+  server: 162.159.153.4
   port: 443
   uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true
