@@ -13,32 +13,18 @@ proxies:
   udp: true
 - name: 🇵🇱 PL 02 - xiaohe
   type: vless
-  server: 188.220.205.64
-  port: 2053
-  uuid: 428e3a9c-7ba6-4268-ae43-91c0e5b8d677
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf.zxs1202.cc.cd
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: cf.zxs1202.cc.cd
-- name: 🇵🇱 PL 03 - xiaohe
-  type: vless
-  server: 104.17.247.68
+  server: 104.24.31.89
   port: 443
-  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: khoda.ak-khoda.workers.dev
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   network: ws
   ws-opts:
-    path: /sync
+    path: /?ed=2560
     headers:
-      Host: khoda.ak-khoda.workers.dev
+      Host: rayan-007.nastaran.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - xiaohe
   - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - xiaohe
   - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
 rules:
 - MATCH,PROXIES
