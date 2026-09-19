@@ -11,17 +11,49 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: U9YAoqBgg5VyGBc6vQv1sN
   udp: true
+- name: 🇵🇱 PL 02 - xiaohe
+  type: vless
+  server: 188.220.205.64
+  port: 2053
+  uuid: 428e3a9c-7ba6-4268-ae43-91c0e5b8d677
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf.zxs1202.cc.cd
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: cf.zxs1202.cc.cd
+- name: 🇵🇱 PL 03 - xiaohe
+  type: vless
+  server: 104.17.247.68
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - xiaohe
+  - 🇵🇱 PL 02 - xiaohe
+  - 🇵🇱 PL 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - xiaohe
+  - 🇵🇱 PL 02 - xiaohe
+  - 🇵🇱 PL 03 - xiaohe
 rules:
 - MATCH,PROXIES
