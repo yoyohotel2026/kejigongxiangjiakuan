@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇱🇺 LU 01 - xiaohe
   type: vless
-  server: 188.42.145.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇱🇺 LU 02 - xiaohe
-  type: vless
   server: 104.21.117.9
   port: 443
   uuid: 0926b50d-3a90-18dd-7c8e-0cf100000000
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇱🇺 LU 01 - xiaohe
-  - 🇱🇺 LU 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇺 LU 01 - xiaohe
-  - 🇱🇺 LU 02 - xiaohe
 rules:
 - MATCH,PROXIES
