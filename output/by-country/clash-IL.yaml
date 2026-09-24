@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+- name: 🇮🇱 IL 01 - xiaohe
   type: vless
-  server: 46.8.200.91
-  port: 443
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  server: platform113.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /platform113
     headers:
-      Host: cf3.rumedia-cdn.com
+      Host: platform113.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  - 🇮🇱 IL 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  - 🇮🇱 IL 01 - xiaohe
 rules:
 - MATCH,PROXIES
