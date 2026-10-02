@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaohe
+- name: 🇮🇶 IQ 01 - xiaohe
   type: vless
-  server: www.asamping.ir
-  port: 2052
-  uuid: 5f424b45-29e5-4cbe-b752-88ac535c11b7
+  server: 104.21.69.37
+  port: 443
+  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /vl/uWq9DFRgj8BwQiSXmZ46
     headers:
-      Host: www.asamping.ir
+      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 rules:
 - MATCH,PROXIES
