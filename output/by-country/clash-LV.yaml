@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱 IL 01 - xiaohe
+- name: 🇱🇻 LV 01 - xiaohe
   type: vless
-  server: 34.165.56.30
+  server: 91.108.189.38
   port: 443
-  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
+  uuid: 8d42d29a-ed53-4684-a9ff-6b33826149de
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
-  servername: www.cloudflare.com
-  client-fingerprint: qq
+  servername: aio.eth0.dpdns.org
+  network: ws
+  ws-opts:
+    path: /aioproxybot/94.23.144.99-2053
+    headers:
+      Host: aio.eth0.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇱 IL 01 - xiaohe
+  - 🇱🇻 LV 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 IL 01 - xiaohe
+  - 🇱🇻 LV 01 - xiaohe
 rules:
 - MATCH,PROXIES
