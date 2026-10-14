@@ -19,6 +19,19 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  type: vless
   server: 31.57.190.49
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
@@ -31,7 +44,21 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
     headers:
       Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  type: vless
+  server: 57.129.130.63
+  port: 52014
+  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -44,21 +71,9 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   type: vless
-  server: zordbx861.233874.xyz
-  port: 8888
-  uuid: 46509b23-fe97-45b3-9c89-bd1b2a93bd4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: vBSBoPYKiB5RZ9_jNPEdLnroJ2M7MKw0c1Rvh6-QmV4
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  type: vless
-  server: 31.57.190.49
+  server: 31.57.190.17
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
@@ -70,19 +85,6 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132
     headers:
       Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   type: vless
   server: uae.unixzone.us
@@ -111,30 +113,30 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: zordbx861.233874.xyz
+  port: 8888
+  uuid: 46509b23-fe97-45b3-9c89-bd1b2a93bd4e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  reality-opts:
+    public-key: vBSBoPYKiB5RZ9_jNPEdLnroJ2M7MKw0c1Rvh6-QmV4
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 162.159.152.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: rayan-007.maxima.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: uae.unixzone.us
+      Host: rayan-007.maxima.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
