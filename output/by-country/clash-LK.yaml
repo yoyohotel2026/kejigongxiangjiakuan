@@ -4,30 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇱 AL 01 - xiaohe
+- name: 🇱🇰 LK 01 - xiaohe
   type: vless
-  server: radar.cloudflare.com
-  port: 8080
-  uuid: cfa71937-73d5-4eb8-9b25-eadecd944803
+  server: 170.114.45.6
+  port: 2096
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: pcloud.z-tas.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: sh-harand.shcharand00.workers.dev
+      Host: pcloud.z-tas.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇱 AL 01 - xiaohe
+  - 🇱🇰 LK 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL 01 - xiaohe
+  - 🇱🇰 LK 01 - xiaohe
 rules:
 - MATCH,PROXIES
